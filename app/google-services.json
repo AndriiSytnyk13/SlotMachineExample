@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "29141122455",
+    "project_id": "commenbuerifrejgucom",
+    "storage_bucket": "commenbuerifrejgucom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29141122455:android:d03417768ac6bd142158d2",
+        "android_client_info": {
+          "package_name": "com.menbuERifrejGu.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29141122455-dhpj8e52ivrhvvg0v964j1u4dvcs5b5d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCF2pnmnZ8BrfYL8wFee20strYO1GdZRDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29141122455-dhpj8e52ivrhvvg0v964j1u4dvcs5b5d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

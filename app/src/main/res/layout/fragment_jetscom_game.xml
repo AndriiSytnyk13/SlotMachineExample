@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="jetscomViewModel"
+            type="com.sytyy.com.jetscomviewmodel.JetscomGameViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/jetscom_back"
+        tools:context=".jetscomview.jetscomfragment.JetscomGameFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="299dp"
+            android:layout_height="141dp"
+            android:background="@drawable/jetscom_slot"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.436">
+
+            <ImageView
+                android:id="@+id/jetscom_slot_1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:src="@drawable/jetscom_slot_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/jetscom_slot_2"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.494"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/jetscom_slot_2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/jetscom_slot_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.494"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/jetscom_slot_3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="17dp"
+                android:layout_weight="1"
+                android:src="@drawable/jetscom_slot_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/jetscom_slot_2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.494"
+                tools:ignore="ContentDescription" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/jetscom_spin"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="@{() -> jetscomViewModel.jetscomStartSpin()}"
+            android:src="@drawable/jetscom_spin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.7"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/jetscom_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@{Integer.toString(jetscomViewModel.jetscomCurrentScore)}"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:visibility="@{jetscomViewModel.jetscomSpinVisibility}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.205" />
+
+        <Button
+            android:id="@+id/jetscom_table"
+            android:layout_width="106dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="20dp"
+            android:background="#105861"
+            android:text="@string/jetscom_table"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jetscom_spin"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

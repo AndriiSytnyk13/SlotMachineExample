@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/jetscom_nav_graph"
+    app:startDestination="@id/jetscomLoadingFragment">
+
+
+    <fragment
+        android:id="@+id/jetscomLoadingFragment"
+        android:name="com.sytyy.com.jetscomview.jetscomfragment.JetscomLoadingFragment"
+        android:label="fragment_jetscom_loading"
+        tools:layout="@layout/fragment_jetscom_loading" >
+        <action
+            android:id="@+id/action_jetscomLoadingFragment_to_jetscomMenuFragment"
+            app:destination="@id/jetscomMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jetscomMenuFragment"
+        android:name="com.sytyy.com.jetscomview.jetscomfragment.JetscomMenuFragment"
+        android:label="fragment_jetscom_menu"
+        tools:layout="@layout/fragment_jetscom_menu" >
+        <action
+            android:id="@+id/action_jetscomMenuFragment_to_jetscomGameFragment"
+            app:destination="@id/jetscomGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jetscomGameFragment"
+        android:name="com.sytyy.com.jetscomview.jetscomfragment.JetscomGameFragment"
+        android:label="fragment_jetscom_game"
+        tools:layout="@layout/fragment_jetscom_game" >
+        <action
+            android:id="@+id/action_jetscomGameFragment_to_jetscomTableFragment"
+            app:destination="@id/jetscomTableFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jetscomTableFragment"
+        android:name="com.sytyy.com.jetscomview.jetscomfragment.JetscomTableFragment"
+        android:label="fragment_jetscom_table"
+        tools:layout="@layout/fragment_jetscom_table" />
+</navigation>

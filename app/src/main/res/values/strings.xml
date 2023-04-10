@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SevenEight</string>
+    <string name="jetscom_play">Play</string>
+    <string name="jetscom_quit">Quit</string>
+    <string name="jetscomDomen">bWVuYnVyaWVmb3QuY29t</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="jetscom_table">Pay table</string>
+</resources>

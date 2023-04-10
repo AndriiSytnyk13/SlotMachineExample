@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jetscom_back"
+    tools:context=".jetscomview.jetscomfragment.JetscomMenuFragment">
+
+
+    <ImageView
+        android:layout_width="230dp"
+        android:layout_height="146dp"
+        android:src="@drawable/jetscom_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.273"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/jetscom_play"
+        android:layout_width="106dp"
+        android:layout_height="43dp"
+        android:background="#105861"
+        android:text="@string/jetscom_play"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.643" />
+
+    <Button
+        android:id="@+id/jetscom_quit"
+        android:layout_width="106dp"
+        android:layout_height="43dp"
+        android:background="#105861"
+        android:text="@string/jetscom_quit"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.832" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
